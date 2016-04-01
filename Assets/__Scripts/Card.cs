@@ -12,19 +12,18 @@ public class Card : MonoBehaviour {
 	public List<GameObject> decoGOs = new List<GameObject>();
 	public List<GameObject> pipGOs = new List<GameObject>();
 	
-	public GameObject back;     // back of card;
+	public GameObject back;  // back of card;
 	public CardDefinition def;  // from DeckXML.xml		
 
+	// Use this for initialization
+	void Start () {
 	
-	// property
-	public bool faceUP {
-		get {
-			return (!back.activeSelf);
-		}		
-		set {
-			back.SetActive(!value);
-		}
-	}	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
 } // class Card
 
 [System.Serializable]
@@ -40,5 +39,5 @@ public class CardDefinition{
 	public string	face;	//sprite to use for face cart
 	public int		rank;	// value from 1-13 (Ace-King)
 	public List<Decorator>	
-					pips = new List<Decorator>();  // Pips Used					
-} // Class CardDefinition
+					pips = new List<Decorator>();  // Pips Used
+}
