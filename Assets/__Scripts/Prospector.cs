@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -382,7 +381,7 @@ public class Prospector : MonoBehaviour
     void ReloadLevel()
     {
         // Reload the scene, resetting the game
-        SceneManager.LoadScene("__Prospector_Scene_0");
+        Application.LoadLevel("__Prospector_Scene_0");
     }
 
     // ScoreManager handles all of the scoring
